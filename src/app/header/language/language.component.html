@@ -1,0 +1,9 @@
+<div class="language" appShow >
+  <span class="language__item language__item--arrow" *ngIf="isEnglish">En</span>
+  <span class="language__item language__item--arrow" *ngIf="!isEnglish">Ru</span>
+  <!-- dropDown -->
+  <ul class="language__list dropdown">
+    <li class="language__item" *ngIf="!isEnglish" (click)="switchLanguage('en')">En</li>
+    <li class="language__item" *ngIf="isEnglish" (click)="switchLanguage('ru')">Ru</li>
+  </ul>
+</div>

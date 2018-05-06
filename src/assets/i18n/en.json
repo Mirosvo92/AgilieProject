@@ -1,0 +1,11 @@
+{
+  "pageLink": {
+    "home": "Home",
+    "collection": "Collection",
+    "upload": "Upload"
+  },
+  "userLink": {
+    "SignIn": "Sign In",
+    "createAccount": "Create account"
+  }
+}

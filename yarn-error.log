@@ -1,0 +1,92 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Users\Vlad\AppData\Roaming\npm;C:\Users\Vlad\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.6.0
+
+Node version: 
+  9.3.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@angular/common/-/common-5.2.10.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:133786:19)
+      at Object.onceWrapper (events.js:254:19)
+      at ClientRequest.emit (events.js:159:13)
+      at TLSSocket.emitTimeout (_http_client.js:710:34)
+      at Object.onceWrapper (events.js:254:19)
+      at TLSSocket.emit (events.js:159:13)
+      at TLSSocket.Socket._onTimeout (net.js:421:8)
+      at ontimeout (timers.js:466:11)
+      at tryOnTimeout (timers.js:304:5)
+      at Timer.listOnTimeout (timers.js:264:5)
+
+npm manifest: 
+  {
+    "name": "agilie-project",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+      "ng": "ng",
+      "start": "ng serve",
+      "build": "ng build --prod",
+      "test": "ng test",
+      "lint": "ng lint",
+      "e2e": "ng e2e"
+    },
+    "private": true,
+    "dependencies": {
+      "@angular/animations": "^5.2.0",
+      "@angular/common": "^5.2.0",
+      "@angular/compiler": "^5.2.0",
+      "@angular/core": "^5.2.0",
+      "@angular/forms": "^5.2.0",
+      "@angular/http": "^5.2.0",
+      "@angular/platform-browser": "^5.2.0",
+      "@angular/platform-browser-dynamic": "^5.2.0",
+      "@angular/router": "^5.2.0",
+      "@ngx-translate/core": "^9.1.1",
+      "@ngx-translate/http-loader": "^3.0.1",
+      "@types/angular": "^1.6.45",
+      "core-js": "^2.4.1",
+      "font-awesome": "^4.7.0",
+      "rxjs": "^5.5.6",
+      "zone.js": "^0.8.19"
+    },
+    "resolutions": {
+      "@types/tapable": "1.0.0"
+    },
+    "devDependencies": {
+      "@angular/cli": "1.6.5",
+      "@angular/compiler-cli": "^5.2.0",
+      "@angular/language-service": "^5.2.0",
+      "@types/jasmine": "~2.8.3",
+      "@types/jasminewd2": "~2.0.2",
+      "@types/node": "~6.0.60",
+      "@types/tapable": "^1.0.2",
+      "codelyzer": "^4.0.1",
+      "jasmine-core": "~2.8.0",
+      "jasmine-spec-reporter": "~4.2.1",
+      "karma": "~2.0.0",
+      "karma-chrome-launcher": "~2.2.0",
+      "karma-cli": "~1.0.1",
+      "karma-coverage-istanbul-reporter": "^1.2.1",
+      "karma-jasmine": "~1.1.0",
+      "karma-jasmine-html-reporter": "^0.2.2",
+      "protractor": "~5.1.2",
+      "ts-node": "~4.1.0",
+      "tslint": "~5.9.1",
+      "typescript": "~2.5.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,36 @@
+<!-- icon -->
+<span class="user-icon" appShow #userLink>
+  <i class="fa fa-user-circle fa-2x white"></i>
+</span>
+<!-- links --->
+<div class="user-link">
+  <ul class="user-link__list">
+    <!-- Sign In --->
+    <li class="user-link__list-item" *ngIf="!isUser">
+      <a class="user-link__list-item-link" #signIn appShow href="#">{{'userLink.SignIn' | translate}}</a>
+      <app-sign-in class="registration" [signButton]='signIn'></app-sign-in>
+    </li>
+    <!-- if user -->
+    <div class="header-user" *ngIf="isUser">
+      <div class="header-user__wrapper" appShow >
+        <!-- img -->
+        <img class="round" src="{{dataUser.picture.data.url}}">
+        <span class="header-user__name">{{dataUser.first_name}}</span>
+        <!-- user setting -->
+        <ul class="user-setting">
+          <li class="user-setting__item"><a class="user-setting__item-link" href="#" >Profile Settings</a></li>
+          <li class="user-setting__item"><a class="user-setting__item-link" href="#" >Help</a></li>
+          <li class="user-setting__item"><a class="user-setting__item-link" href="#" (click)="onSignOut()" >Sign Out</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Create account --->
+    <li class="user-link__list-item" *ngIf="!isUser">
+      <a class="user-link__list-item-link" href="#">{{'userLink.createAccount' | translate}}</a>
+    </li>
+  </ul>
+  <!-- close -->
+  <span class="user-link__close" appHide [isClose]="userLink">
+    <i class="fa fa-times main-color fa-2x"></i>
+  </span>
+</div>

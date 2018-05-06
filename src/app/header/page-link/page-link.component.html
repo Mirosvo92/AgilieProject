@@ -1,0 +1,38 @@
+<!-- icon -->
+<span class="burger-icon" appShow #menu>
+  <i class="fa fa-bars fa-2x white"></i>
+</span>
+<!-- nav -->
+<nav class="main-nav">
+  <ul class="main-nav__list">
+    <!-- home -->
+    <li class="main-nav__list-item">
+      <a class="main-nav__list-item-link"
+         routerLinkActive="main-nav__list-item-link--active"
+         [routerLinkActiveOptions]="{exact:true}"
+         routerLink="/" >
+          {{'pageLink.home' | translate}}
+      </a>
+    </li>
+    <!-- collection -->
+    <li class="main-nav__list-item">
+      <a class="main-nav__list-item-link"
+         [routerLink]="'/collection'"
+         routerLinkActive="main-nav__list-item-link--active" >
+        {{'pageLink.collection' | translate}}
+      </a>
+    </li>
+    <!-- upload -->
+    <li class="main-nav__list-item">
+      <a class="main-nav__list-item-link"
+         [routerLink]="'/upload'"
+         routerLinkActive="main-nav__list-item-link--active" >
+        {{'pageLink.upload' | translate}}
+      </a>
+    </li>
+  </ul>
+  <!-- close button -->
+  <span class="main-nav__close" appHide [isClose]="menu" >
+    <i class="fa fa-times main-color fa-2x"></i>
+  </span>
+</nav>
