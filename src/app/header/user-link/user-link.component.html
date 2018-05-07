@@ -7,7 +7,7 @@
   <ul class="user-link__list">
     <!-- Sign In --->
     <li class="user-link__list-item" *ngIf="!isUser">
-      <a class="user-link__list-item-link" #signIn appShow href="#">{{'userLink.SignIn' | translate}}</a>
+      <a class="user-link__list-item-link" #signIn appShow href="javascript:void(0)">{{'userLink.SignIn' | translate}}</a>
       <app-sign-in class="registration" [signButton]='signIn'></app-sign-in>
     </li>
     <!-- if user -->
@@ -18,9 +18,9 @@
         <span class="header-user__name">{{dataUser.first_name}}</span>
         <!-- user setting -->
         <ul class="user-setting">
-          <li class="user-setting__item"><a class="user-setting__item-link" href="#" >Profile Settings</a></li>
-          <li class="user-setting__item"><a class="user-setting__item-link" href="#" >Help</a></li>
-          <li class="user-setting__item"><a class="user-setting__item-link" href="#" (click)="onSignOut()" >Sign Out</a></li>
+          <li class="user-setting__item"><a class="user-setting__item-link" href="javascript:void(0)" >Profile Settings</a></li>
+          <li class="user-setting__item"><a class="user-setting__item-link" href="javascript:void(0)" >Help</a></li>
+          <li class="user-setting__item"><a class="user-setting__item-link" href="javascript:void(0)" (click)="onSignOut()" >Sign Out</a></li>
         </ul>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {LoginService} from '../../shared/services/login.servise';
-import {Facebook, FB} from '../../shared/SDK/facebook';
+import {FacebookLogout} from '../../shared/SDK/facebook';
 
 @Component({
   selector: 'app-user-link',
@@ -22,8 +22,8 @@ export class UserLinkComponent implements OnInit {
   }
 
   onSignOut() {
-    const test = new Facebook();
-    test.logout();
+    const facebookLogout = new FacebookLogout();
+    facebookLogout.logout();
     this.isUser = false;
   }
 

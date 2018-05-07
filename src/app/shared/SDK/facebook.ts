@@ -25,10 +25,6 @@ export class Facebook {
     }, {scope: 'public_profile,email'} );
   }
 
-  logout() {
-    FB.logout();
-  }
-
   me(userId) {
     FB.api('/' + userId + '?fields=id,name,first_name,email,gender,picture.width(150).height(150)', (result) => {
       this.dataUser.next(result);
@@ -66,6 +62,7 @@ export class Facebook {
 
   setCallback() {
     FB.getLoginStatus(response => {
+      console.log(response);
       if (response.status === 'connected') {
         this.response.next(response);
         this.response.subscribe( (data) => {
@@ -74,5 +71,12 @@ export class Facebook {
         });
       }
     });
+  }
+}
+
+export class FacebookLogout {
+  constructor() {}
+  logout() {
+    FB.logout();
   }
 }
